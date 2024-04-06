@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(nature.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center     ;
+}
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    min-width: 350px;
+    background: white;
+    border-radius: 10px;
+    padding: 55px;
+    text-align: center;
+    box-shadow: -2px 2px 15 rgba(0,0,0,0.6);
+
+
+}
+.form-box h1{
+    font-size: 30px;
+    color: green;
+}
+.form-box .underline{
+    width: 35px;
+    height: 5px;
+    background-color: green;
+    border-radius: 5px;
+    margin: 15px auto 10px auto;
+    transition: transform 0.5s;
+}
+.input-group{
+    height: 280px;
+}
+.input-field{
+    background: #eaeaea;
+    margin: 10px 0;
+    display: flex;
+    max-height: 60px;
+    overflow: hidden;
+    transition: maxHeight 1s;
+}
+.input-field input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    width: 100%;
+    padding: 16px 10px;
+}
+.input-field  i{
+    margin: 10px ;
+    color: #999;
+}
+.terms{
+    display: flex;
+    gap: 10px;
+}
+.terms p a{
+    text-decoration: none;
+    color: green;
+}
+.btn-grp{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-grp button{
+    flex-basis: 48%;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    margin: 15px 0px;
+    background: green;
+    color: white;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+ button.disable{
+    color: #eaeaea;
+    background-color: #555;
+}
